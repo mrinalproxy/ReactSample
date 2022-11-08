@@ -1,7 +1,7 @@
 import './App.css';
 import { useState } from "react"
-import axios  from 'axios';
 import SecondComponent from "./SecondSample"
+import Button from 'react-bootstrap/Button';
 
 function App() {
   const [count, setCount] = useState(10);
@@ -14,12 +14,12 @@ function App() {
 
   return (
     <div >
-      <h2 style={{ textAlign: "center" }}>Count: {count}</h2>
-      <button onClick={changeTheCount}>
-        Change the count
-      </button>
+      <h2 className='text-center p-5'>Count: {count}</h2>
+      <div className='text-center' onClick={changeTheCount}>
+        <Button variant="outline-danger">Change the count</Button>{' '}
+      </div>
 
-      <SecondComponent/>
+      <SecondComponent />
     </div>
   );
 }

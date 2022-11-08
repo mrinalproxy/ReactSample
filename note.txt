@@ -1,0 +1,12 @@
+1.  CSS/Boostrap to React
+2. useState
+3. useEffect
+4. axios - GET, POST, Patch, Put, Delete 
+
+1. We need install both react-Boostrap and Boostrap
+
+npm install react-bootstrap bootstrap
+
+paste the line bellow to index.js
+
+import 'bootstrap/dist/css/bootstrap.min.css';
